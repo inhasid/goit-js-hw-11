@@ -7,7 +7,7 @@ import Notiflix from 'notiflix';
 const refs = {
     searchForm: document.querySelector(".search-form"),
     gallery: document.querySelector(".gallery"),
-    loadMoreBtn: document.querySelector(".load-more "),
+    loadMoreBtn: document.querySelector(".load-more"),
 };
 
 const { searchForm, gallery, loadMoreBtn } = refs;

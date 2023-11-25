@@ -80,12 +80,15 @@ img {
     font-size: 0.7em;
 }
 
-.load-more {
+.button-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
+}
+
+.load-more {
     padding: 10px 20px;
-    margin: 20 auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2em;
     font-weight: bold;
@@ -102,4 +105,5 @@ img {
 .load-more:hover {
     background-color: #0056b3;
     transform: scale(1.05);
+    outline: none;
 }
