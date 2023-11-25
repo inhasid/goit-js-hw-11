@@ -1,0 +1,105 @@
+img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(223, 224, 228, 0.7);
+}
+
+.search-form input {
+    height: 40px;
+    width: 320px;
+    padding: 5px 20px;
+ /*   border-radius: 5px 5px 5px 5px;*/
+    margin-right: 5px;
+    border: 1px solid #c4c7c7;
+    outline: none;
+}
+
+.search-form button {
+    padding: 5px 20px;
+    width: 120px;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid #c4c7c7;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    color: #818484;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.search-form button:hover {
+        background-color: #393b3d;
+        transform: scale(1.05);
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.photo-card {
+    width: calc((100% - 32px) / 3);
+    object-fit: cover;
+}
+
+.info {
+    margin: 0px auto;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #cacbcc;
+    background-color: #404343;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.7;
+    font-size: 0.7em;
+}
+
+.load-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 20 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: #818484;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.load-more:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
