@@ -1,8 +1,7 @@
+import createMarkup from "./js/markup"
 import axios from "axios";
 import Notiflix from 'notiflix';
-//import SimpleLightbox from "simplelightbox";
-// Додатковий імпорт стилів
-//import "simplelightbox/dist/simple-lightbox.min.css";
+
 
 const refs = {
     searchForm: document.querySelector(".search-form"),
@@ -89,36 +88,4 @@ async function serviceImage() {
     finally {
         searchForm.reset();
     }
-}
-    
-function createMarkup(arr) {
-    return arr
-        .map(
-            ({
-                webformatURL,
-                largeImageURL,
-                tags,
-                likes,
-                views,
-                comments,
-                downloads,
-            }) => `<div class="photo-card">
-  <img src="${webformatURL}" alt="${tags}" loading="lazy" />
-  <div class="info">
-    <p class="info-item">
-      <b>Likes: ${likes}</b>
-    </p>
-    <p class="info-item">
-      <b>Views: ${views}</b>
-    </p>
-    <p class="info-item">
-      <b>Comments: ${comments}</b>
-    </p>
-    <p class="info-item">
-      <b>Downloads: ${downloads}</b>
-    </p>
-  </div>
-</div>`
-    )
-    .join("");
 }
