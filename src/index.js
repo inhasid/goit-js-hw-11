@@ -64,6 +64,7 @@ async function serviceImage() {
         const { totalHits, hits } = respImage.data;
         
         if (hits.length === 0) {
+            loadMoreBtn.classList.add('is-hidden');
             Notiflix.Notify.warning(
                 'Sorry, there are no images matching your search query. Please try again.'
             );
