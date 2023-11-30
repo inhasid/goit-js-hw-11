@@ -14,7 +14,7 @@ const { searchForm, gallery, loadMoreBtn, api } = refs;
 
 loadMoreBtn.classList.add('is-hidden');
 
-//let page = 1;
+let page = 1;
 let dataUserRes = '';
 let endArr = 0;
 
